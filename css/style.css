@@ -277,6 +277,7 @@ a img {
     color: #fff;
     font-weight: bold;
     padding: 8px 72px 8px 53px;
+    text-transform: uppercase;
 }
 .submit:hover {
     text-shadow: 1px 1px 1px #333;
@@ -296,24 +297,31 @@ a img {
     height: 100%;
     min-height: 100%;
     background: rgba(153, 153, 153, 0.5);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: none;
     z-index: 9999;
 }
 .popup {
-    width: 100%;
-    max-width: 489px;
-    /*box-sizing: border-box;*/
-    background: #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /*width: 100%;*/
+    /*max-width: 489px;*/
+    /*!*box-sizing: border-box;*!*/
+    /*background: #ffffff;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    width: 80%;
+    text-align: center;
+    background: #ccd4d8;
+    border-radius: 7px;
+    margin: 0 auto;
+    padding: 10px 0
 }
-.popup-wrap form {
-    
+
+.popup_feed form {
+
 }
 /******** @media *********/
 
@@ -416,7 +424,7 @@ a img {
     .menu li:last-child {
         margin-left: 100px;
         border: 3px solid #36aeea;
-
+        border-radius: 4px;
     }
     .menu li:last-child a {
         color: #36aeea;
@@ -442,7 +450,7 @@ a img {
     .menu li:last-child {
         margin-left: 150px;
         border: 3px solid #36aeea;
-
+        border-radius: 4px;
     }
     .menu li:last-child a {
         color: #36aeea;
@@ -476,7 +484,7 @@ a img {
     .menu li:last-child {
         margin-left: 250px;
         border: 3px solid #36aeea;
-
+        border-radius: 4px;
     }
     .menu li:last-child a {
         color: #36aeea;
@@ -501,6 +509,10 @@ a img {
     }
     .submit {
         padding: 8px 72px 8px 53px;
+    }
+    .popup {
+        width: 30%;
+        padding: 20px 0 25px;
     }
     .popup_feed {
         width: 100%;
