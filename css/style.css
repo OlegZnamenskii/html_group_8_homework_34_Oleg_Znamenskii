@@ -214,9 +214,7 @@ a img {
 
 /******** CLIENT_SAY *******/
 .client_say {
-    background: url("../upload/foot_bg.jpg") 0 0 no-repeat;
-    /*background-size: cover;*/
-    padding-bottom: 100px;
+    background: transparent;
 }
 
 .inners {
@@ -226,14 +224,19 @@ a img {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 
 }
 
 .inner {
-
+    padding-top: 50px;
+    padding-left: 20px;
+    color: #adadad;
 }
-
+.inner img {
+    vertical-align: middle;
+}
 .paragraph::before {
     content: '\201C';
     display: block;
@@ -245,6 +248,8 @@ a img {
 
 .name {
     color: #36aeea;
+    margin-left: 15px;
+    font-size: 16px;
 }
 
 .name span {
@@ -253,14 +258,20 @@ a img {
 }
 
 /******* FEED *******/
+.wrap-feed {
+    background: url("../upload/foot_bg.jpg") 0 bottom no-repeat;
+    background-size: cover;
+    padding: 10px 0;
+}
 .feed {
     width: 80%;
     text-align: center;
     background: #ccd4d8;
     border-radius: 7px;
     margin: 0 auto;
-    padding: 10px 0
-
+    padding: 10px 0;
+    margin-bottom: 165px;
+    margin-top: 104px;
 }
 
 .feed form {
@@ -302,16 +313,10 @@ a img {
     left: 0;
     display: none;
     z-index: 9999;
+    margin: 0 auto;
+    padding-top: 104px;
 }
 .popup {
-    /*width: 100%;*/
-    /*max-width: 489px;*/
-    /*!*box-sizing: border-box;*!*/
-    /*background: #ffffff;*/
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*transform: translate(-50%, -50%);*/
     width: 80%;
     text-align: center;
     background: #ccd4d8;
@@ -393,6 +398,7 @@ a img {
         left: 0;
     }
 
+
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -429,8 +435,15 @@ a img {
     .menu li:last-child a {
         color: #36aeea;
     }
+    .feed {
+        width: 50%;
+    }
 
-
+}
+@media (min-width: 768px) and (max-width: 1440px){
+    .inners {
+        flex-direction: row;
+    }
 }
 @media (min-width: 979px) and (max-width: 1200px){
     .mobile-menu {
@@ -460,6 +473,9 @@ a img {
     }
     .inners_wrap {
         flex-direction: row;
+    }
+    .feed {
+        width: 50%;
     }
 
 }
