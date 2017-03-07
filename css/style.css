@@ -345,7 +345,11 @@ a img {
 
 }
 /******** @media *********/
-
+@media screen and (min-width: 360px){
+    .menu-btn {
+        padding: 6px 0 6px;
+    }
+}
 @media (max-width: 480px) {
     .mobile-menu {
         display: block;
@@ -353,7 +357,12 @@ a img {
         width: 100%;
     }
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .menu-btn {
+        margin-top: 15px;
+    }
 
+}
 @media (max-width: 767px) {
 
     .container {
@@ -368,7 +377,6 @@ a img {
         margin-top: 0;
         width: 50%;
     }
-
     nav {
         margin: 0;
         background: none;
