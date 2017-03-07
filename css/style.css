@@ -65,13 +65,30 @@ header {
 nav {
     display: block;
 }
-
+.relative {
+    position: relative;
+}
 .menu {
     display: block;
     padding: 0;
     margin: 0;
 }
-
+.menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18%;
+    height: auto;
+    display: block;
+    background: transparent;
+    color: #adadad;
+    outline: none;
+    padding: 4px 0 4px;
+    font-size: 30px;
+}
+.menu-btn:hover {
+    display: block;
+}
 .menu li {
     display: inline-block;
     position: relative;
@@ -445,6 +462,9 @@ a img {
     }
     .gallery_wrap a {
         width: 32%;
+    }
+    .menu-btn {
+        display: none;
     }
 }
 @media (min-width: 979px) and (max-width: 1200px){
